@@ -1,0 +1,23 @@
+[
+  {
+    "nome": "José Silva Santos",
+    "especialidade": "Neurologia",
+    "numeroConselho": 123,
+    "ufConselho": "DF",
+    "email": "jose@clinica.com"
+  },
+  {
+    "nome": "Lucas Silva Costa",
+    "especialidade": "Otorrinolaringologia",
+    "numeroConselho": 321,
+    "ufConselho": "BA",
+    "email": "lucas@clinica.com"
+  },
+  {
+    "nome": "Maria Souza Costa",
+    "especialidade": "Ortopedia",
+    "numeroConselho": 1073741824,
+    "ufConselho": "SP",
+    "email": "maria@clinica.com"
+  }
+]
