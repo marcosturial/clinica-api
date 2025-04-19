@@ -12,6 +12,13 @@ Para saber mais sobre o Quarkus, acessar: <https://quarkus.io/>.
 ./mvnw quarkus:dev
 ```
 
+## Testando a api
+
+A aplicação será executada por padrão na porta 8080 e é possível testá-la utilizando o modo de desenvolvimento.
+
+É possível testar a api acessando o swagger, implementado no endereço http://localhost:8080/api
+
+
 ## Gerando um jar e executando a aplicação
 
 O jar da aplicação pode ser gerado com o seguinte comando:
@@ -23,7 +30,3 @@ O jar da aplicação pode ser gerado com o seguinte comando:
 Será produzido o executável `quarkus-run.jar` na pasta `target/quarkus-app/`.
 
 Agora é possível executar a aplicação utilizando o comando `java -jar target/quarkus-app/quarkus-run.jar`.
-
-## Testando a api
-A aplicação será gerada por padrão na porta 8080.
-É possível testar a api acessando o swagger, implementado no endereço http://localhost:8080/api
