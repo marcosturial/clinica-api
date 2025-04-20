@@ -64,14 +64,14 @@ public class ProfissionaisService {
                 .filter(p ->
                 {
                     String[] partesNome = p.getNome().trim().toLowerCase().split(" ");
-                    return Arrays.stream(partesNome).anyMatch(parteNome -> parteNome.startsWith(nome));
+                    return Arrays.stream(partesNome).anyMatch(parteNome -> parteNome.startsWith(nome.toLowerCase()));
                 }).toList();
     }
 
     public List<DadosCadastroProfissional> getProfissionaisByEspecialidade(String especialidade) {
         var profissionais = this.listarProfissionais();
         return profissionais.stream().filter(p ->
-                Especialidade.getEnumByNome(p.getEspecialidade()).equals(Especialidade.getEnumByNome(especialidade)))
+                Especialidade.getEnumByNome(p.getEspecialidade()).equals(Especialidade.getEnumByNome(especialidade.toLowerCase())))
                 .toList();
     }
 
